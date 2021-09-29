@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/clients-labeller/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/clients-labeller/static/js/main.c4a59569.chunk.js",
-    "main.js.map": "/clients-labeller/static/js/main.c4a59569.chunk.js.map",
-    "runtime-main.js": "/clients-labeller/static/js/runtime-main.60651f8a.js",
-    "runtime-main.js.map": "/clients-labeller/static/js/runtime-main.60651f8a.js.map",
-    "static/js/2.b60341ed.chunk.js": "/clients-labeller/static/js/2.b60341ed.chunk.js",
-    "static/js/2.b60341ed.chunk.js.map": "/clients-labeller/static/js/2.b60341ed.chunk.js.map",
-    "static/js/3.e3b0c3fb.chunk.js": "/clients-labeller/static/js/3.e3b0c3fb.chunk.js",
-    "static/js/3.e3b0c3fb.chunk.js.map": "/clients-labeller/static/js/3.e3b0c3fb.chunk.js.map",
-    "index.html": "/clients-labeller/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/clients-labeller/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b60341ed.chunk.js.LICENSE.txt": "/clients-labeller/static/js/2.b60341ed.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/clients-labeller/static/media/logo.6ce24c58.svg"
+    "main.css": "/clients_labeller_frontend/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/clients_labeller_frontend/static/js/main.c4a59569.chunk.js",
+    "main.js.map": "/clients_labeller_frontend/static/js/main.c4a59569.chunk.js.map",
+    "runtime-main.js": "/clients_labeller_frontend/static/js/runtime-main.da968021.js",
+    "runtime-main.js.map": "/clients_labeller_frontend/static/js/runtime-main.da968021.js.map",
+    "static/js/2.b60341ed.chunk.js": "/clients_labeller_frontend/static/js/2.b60341ed.chunk.js",
+    "static/js/2.b60341ed.chunk.js.map": "/clients_labeller_frontend/static/js/2.b60341ed.chunk.js.map",
+    "static/js/3.e3b0c3fb.chunk.js": "/clients_labeller_frontend/static/js/3.e3b0c3fb.chunk.js",
+    "static/js/3.e3b0c3fb.chunk.js.map": "/clients_labeller_frontend/static/js/3.e3b0c3fb.chunk.js.map",
+    "index.html": "/clients_labeller_frontend/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/clients_labeller_frontend/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.b60341ed.chunk.js.LICENSE.txt": "/clients_labeller_frontend/static/js/2.b60341ed.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/clients_labeller_frontend/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.60651f8a.js",
+    "static/js/runtime-main.da968021.js",
     "static/js/2.b60341ed.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.c4a59569.chunk.js"
