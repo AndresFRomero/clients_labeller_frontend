@@ -1,14 +1,40 @@
 import React from 'react'
-import Button from '@material-ui/core/Button';
+import {Button, Typography, Link, Container, Box} from '@material-ui/core';
+
+const Copyrigth = (props) => {
+
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {'Copyright © '}
+        < Link color="inherit" href="https://mui.com/">
+          {props.sx.text}
+        </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const App = () => {
+
   return (
-    <div style={{ height: "100px"}}>
-      <Button style={{ "min-height": "100%", width: "30%" }} variant = "contained" color = "primary" size = "large" fullWidth = "True"> 
+    <div>
+
+    <Button variant = "contained" color = "primary"> 
         Hola Mundo!
-      </Button>
+    </Button>
+
+    <Container maxWidth="sm">
+      <Box sx={{ my: 4}}>
+        <Typography variant="h4" component="h1" gutterBottom align="center">
+          New React App
+        </Typography>
+        <Copyrigth sx={{text: "My Website"}}/>
+      </Box>
+    </Container>
+
     </div>
-      
+
   )
 }
 
