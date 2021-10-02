@@ -1,40 +1,53 @@
-import React from 'react'
-import {Button, Typography, Link, Container, Box} from '@material-ui/core';
+// Imports
+import React from 'react';
+import {Box, Grid, Paper} from '@mui/material'
+import { styled } from '@mui/material/styles';
+import './App.css';
 
-const Copyrigth = (props) => {
+// Components
+import Login from './components/Login';
+import Header from './components/Header';
+import GeneralStats from './components/GeneralStats';
+import LastOrders from './components/LastOrders';
+import LastApproaches from './components/LastApproaches';
+import EventStats from './components/EventStats';
+
+import Labelling from './components/Labelling';
+
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+// Images
+
+function App() {
 
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-        < Link color="inherit" href="https://mui.com/">
-          {props.sx.text}
-        </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-const App = () => {
-
-  return (
-    <div>
-
-    <Button variant = "contained" color = "primary"> 
-        Hola Mundo!
-    </Button>
-
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4}}>
-        <Typography variant="h4" component="h1" gutterBottom align="center">
-          New React App
-        </Typography>
-        <Copyrigth sx={{text: "My Website"}}/>
+    <div className = "App">
+      
+      <Header/>
+      <Box sx={{ flexGrow: 1, p:3 }}>
+        <Grid container spacing={"2vh"}>
+          <Grid item xs={8}>
+              <Grid container rowSpacing={2}>
+                <Grid item xs={12}> <Item> <GeneralStats/> </Item> </Grid>
+                <Grid item xs={12}> <Item> <LastOrders/> </Item> </Grid>
+                <Grid item xs={12}> <Item> <LastApproaches/> </Item> </Grid>
+              </Grid>
+          </Grid>
+          <Grid item xs={4}>
+          <Grid container rowSpacing={"2vh"}>
+                <Grid item xs={12}> <Item> <EventStats/> </Item> </Grid>
+                <Grid item xs={12}> <Item> <Labelling/> </Item> </Grid>
+              </Grid>
+          </Grid>
+        </Grid>
       </Box>
-    </Container>
 
     </div>
-
   )
 }
 
