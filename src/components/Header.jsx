@@ -28,7 +28,7 @@ const Header = () => {
                     <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="h6" sx={{ flexGrow: 1 }}>
-                        Herramienta de Autonomía de Clientes / Equipo de Data Science
+                        Herramienta de Autonomía de Clientes / Data Science
                     </Typography>
                         <img src={tulLogo} alt = "Tul Logo" height="40px"/>
                     </Toolbar>
