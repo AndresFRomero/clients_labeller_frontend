@@ -83,7 +83,7 @@ const LastOrders = () => {
     return (
         <Box sx={{ width: '100%', height: "32.5vh" }}>
             1. Informacion de las ultimas ordenes
-            <TableContainer sx = {{ overflowX: 'auto', pb: 2}}>
+            <TableContainer sx = {{ overflowX: 'auto', overflowY: 'auto', pb: 2}}>
             <Stepper activeStep={10} alternativeLabel>
                 {steps.map((dict) => (
                 <Step key={dict.elapsed_time}>
