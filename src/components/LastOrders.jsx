@@ -16,58 +16,54 @@ const LastOrders = () => {
 
     const steps = [
         {
-            elapsed_time: 15,
+            elapsed_time: 45,
             amount: 150,
             references: 6,
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: false
         },
         {
-            elapsed_time: 10,
+            elapsed_time: 30,
             amount: 150,
             references: 6,
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: true
         },
         {
-            elapsed_time: 8,
+            elapsed_time: 25,
             amount: 150,
             references: 6,
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: false
         },
         {
-            elapsed_time: 3,
+            elapsed_time: 21,
             amount: 150,
             references: 6,
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: false
         },
         {
-            elapsed_time: 15,
+            elapsed_time: 18,
             amount: 150,
             references: 6,
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
-        },
-        {
-            elapsed_time: 3,
-            amount: 150,
-            references: 6,
-            categories: 3,
-            mix: "35%",
-            approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: false
         },
         {
             elapsed_time: 15,
@@ -76,20 +72,31 @@ const LastOrders = () => {
             categories: 3,
             mix: "35%",
             approach: "Call",
-            hour: "09:00 pm"
+            hour: "09:00 pm",
+            cancelled: true
+        },
+        {
+            elapsed_time: 9,
+            amount: 150,
+            references: 6,
+            categories: 3,
+            mix: "35%",
+            approach: "Call",
+            hour: "09:00 pm",
+            cancelled: false
         }
       ];
 
     return (
         <Box sx={{ width: '100%', height: "32.5vh" }}>
-            1. Informacion de las ultimas ordenes
-            <TableContainer sx = {{ overflowX: 'auto', pb: 2}}>
+            Informacion de las ultimas ordenes
+            <TableContainer sx = {{ overflowX: 'auto', overflowY: 'auto', pb: 2}}>
             <Stepper activeStep={10} alternativeLabel>
                 {steps.map((dict) => (
                 <Step key={dict.elapsed_time}>
-                    <StepLabel>
-                        <Typography style={{ fontWeight: 600 }} variant="h7" component="h7">  
-                            -{dict.elapsed_time} days
+                    <StepLabel error={dict.cancelled}>
+                        <Typography style={{ fontWeight: 600 }} variant="body2" component="h6">  
+                            - {dict.elapsed_time} days
                         </Typography>  
                         <Box sx = {{ border: '1px dashed grey' }}>
                             <List dense = {true}>

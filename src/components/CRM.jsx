@@ -6,25 +6,17 @@ function createData(name, value) {
   }
   
   const rows = [
-    createData('Logins', 423),
-    createData('Logins/semana', 15),
-    createData('Revisión de banners', 54),
-    createData('Revisión de carritos', 21),
-    createData('Revisión de verticales', 5),
-    createData('Detalle de productos', 177),
-    createData('Tiempo promedio de sesión', '6.3 min'),
-    createData('# de eventos para ordenar', 32),
-    createData('Horario usual de la sesión', '09:00 am - 11:30 am'),
-    createData('Revisión de push notification', '12%'),
-    createData('Revisión de metodos de pago', 7),
-    createData('Revisión de perfil', 1),
+    createData('Encuestas contestadas', 7),
+    createData('Calificaciones de entrega', 9),
+    createData('Calificación de la app', 'Verdadero'),
+    createData('Puntuacion promedio', '8/10')
   ];
 
-const EventStats = () => {
+const CRM = () => {
     return (
-                <Box style = {{height: "56.25vh"}}>
+                <Box style = {{height: "27.5vh"}}>
                     <Typography variant = 'h6' style = {{fontWeight : 600}} sx = {{p:1, pb: 3}}>
-                        Eventos dentro de la app
+                        CRM
                     </Typography>
                     <TableContainer style={{width: "100%", height: "80%" }} >
                             <Table  size="small" aria-label="a dense table">
@@ -47,4 +39,4 @@ const EventStats = () => {
             )
 }
 
-export default EventStats
+export default CRM
