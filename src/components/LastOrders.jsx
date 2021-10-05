@@ -89,7 +89,7 @@ const LastOrders = () => {
 
     return (
         <Box sx={{ width: '100%', height: "32.5vh" }}>
-            1. Informacion de las ultimas ordenes
+            Informacion de las ultimas ordenes
             <TableContainer sx = {{ overflowX: 'auto', overflowY: 'auto', pb: 2}}>
             <Stepper activeStep={10} alternativeLabel>
                 {steps.map((dict) => (

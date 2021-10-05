@@ -9,23 +9,26 @@ function createData(name, value) {
   
   const rows = [
     createData('Registro', 'Autoregistro'),
+    createData('Tiene foto de fachada', 'Verdadero'),
+    createData('Tipología de cliente', 'Pinturero'),
     createData('Dispositivo', 'Android'),
     createData('Gamma', 'Media'),
     createData('Edad', 48),
     createData('Tiene Hunter', 'Verdadero'),
-    createData('Tiempo de 1er Compra', '12 días'),
+    createData('Tiempo en hacer la 1era compra', '12 días'),
     createData('Valor Primera Orden', '$ 578.12 USD'),
     createData('Categorias', '5 distintas'),
-    createData('Mix', "20%")
+    createData('Mix', "21%"),
+
   ];
 
 const FirstStats = () => {
     return (
         <Box style = {{ height: "20vh" }}>
-            <Typography style={{textAlign:'left', fontWeight: 600}} sx = {{pb:2}}>
-                Dato de registro y primera compra del cliente
+            <Typography variant = 'h6' style = {{fontWeight : 600}} sx = {{p:1, pb: 2}}>
+                Datos de registro y primera compra
             </Typography>
-                <TableContainer style={{width: "100%", height: "80%" }} component={Paper}>
+                <TableContainer style={{width: "100%", height: "60%" }}>
                     <Table  size="small" aria-label="a dense table">
                         <TableBody>
                         {rows.map((row) => (
