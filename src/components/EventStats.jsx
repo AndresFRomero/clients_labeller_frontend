@@ -3,7 +3,7 @@ import {Rating} from '@material-ui/core'
 
 const EventStats = () => {
     return (
-        <div style={{ height: "63vh"}}>
+        <div style={{ height: "56.25vh"}}>
             Aca va informacion relacionada a eventos. Eventos mas usados historicos y ultimamente
         </div>
     )

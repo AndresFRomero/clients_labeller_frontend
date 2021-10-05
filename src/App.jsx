@@ -7,10 +7,13 @@ import './App.css';
 // Components
 import Login from './components/Login';
 import Header from './components/Header';
-import GeneralStats from './components/GeneralStats';
 import LastOrders from './components/LastOrders';
 import LastApproaches from './components/LastApproaches';
 import EventStats from './components/EventStats';
+import FirstStats from './components/FirstStats';
+import AcumStats from './components/AcumStats';
+import Verticals from './components/Verticals';
+import CRM from './components/CRM'
 
 import Labelling from './components/Labelling';
 
@@ -24,21 +27,27 @@ const Item = styled(Paper)(({ theme }) => ({
 // Images
 
 function App() {
-
   return (
     <div className = "App">
       
       <Header/>
-      <Box sx={{ flexGrow: 1, p:3 }}>
-        <Grid container spacing={"2vh"}>
-          <Grid item xs={8}>
-              <Grid container rowSpacing={2}>
-                <Grid item xs={12}> <Item> <GeneralStats/> </Item> </Grid>
+      <Box sx={{ p:"2vh" }}>
+        <Grid container spacing={"2vh"} >
+          <Grid item xs={5}>
+              <Grid container rowSpacing={"2vh"}>
+                <Grid item xs={12}> <Item> <FirstStats/> </Item> </Grid>
                 <Grid item xs={12}> <Item> <LastOrders/> </Item> </Grid>
                 <Grid item xs={12}> <Item> <LastApproaches/> </Item> </Grid>
               </Grid>
           </Grid>
           <Grid item xs={4}>
+              <Grid container rowSpacing={"2vh"}>
+                <Grid item xs={12}> <Item> <Verticals/> </Item> </Grid>
+                <Grid item xs={12}> <Item> <AcumStats/> </Item> </Grid>
+                <Grid item xs={12}> <Item> <CRM/> </Item> </Grid>
+              </Grid>
+          </Grid>
+          <Grid item xs={3}>
           <Grid container rowSpacing={"2vh"}>
                 <Grid item xs={12}> <Item> <EventStats/> </Item> </Grid>
                 <Grid item xs={12}> <Item> <Labelling/> </Item> </Grid>
