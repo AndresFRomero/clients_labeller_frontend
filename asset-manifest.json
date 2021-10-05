@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/clients_labeller_frontend/static/css/main.28e1f967.chunk.css",
-    "main.js": "/clients_labeller_frontend/static/js/main.f54c0df9.chunk.js",
-    "main.js.map": "/clients_labeller_frontend/static/js/main.f54c0df9.chunk.js.map",
+    "main.css": "/clients_labeller_frontend/static/css/main.b8964653.chunk.css",
+    "main.js": "/clients_labeller_frontend/static/js/main.a5b39455.chunk.js",
+    "main.js.map": "/clients_labeller_frontend/static/js/main.a5b39455.chunk.js.map",
     "runtime-main.js": "/clients_labeller_frontend/static/js/runtime-main.30213600.js",
     "runtime-main.js.map": "/clients_labeller_frontend/static/js/runtime-main.30213600.js.map",
-    "static/js/2.5ad371ff.chunk.js": "/clients_labeller_frontend/static/js/2.5ad371ff.chunk.js",
-    "static/js/2.5ad371ff.chunk.js.map": "/clients_labeller_frontend/static/js/2.5ad371ff.chunk.js.map",
+    "static/js/2.1c5b0e30.chunk.js": "/clients_labeller_frontend/static/js/2.1c5b0e30.chunk.js",
+    "static/js/2.1c5b0e30.chunk.js.map": "/clients_labeller_frontend/static/js/2.1c5b0e30.chunk.js.map",
     "index.html": "/clients_labeller_frontend/index.html",
-    "static/css/main.28e1f967.chunk.css.map": "/clients_labeller_frontend/static/css/main.28e1f967.chunk.css.map",
-    "static/js/2.5ad371ff.chunk.js.LICENSE.txt": "/clients_labeller_frontend/static/js/2.5ad371ff.chunk.js.LICENSE.txt"
+    "static/css/main.b8964653.chunk.css.map": "/clients_labeller_frontend/static/css/main.b8964653.chunk.css.map",
+    "static/js/2.1c5b0e30.chunk.js.LICENSE.txt": "/clients_labeller_frontend/static/js/2.1c5b0e30.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.30213600.js",
-    "static/js/2.5ad371ff.chunk.js",
-    "static/css/main.28e1f967.chunk.css",
-    "static/js/main.f54c0df9.chunk.js"
+    "static/js/2.1c5b0e30.chunk.js",
+    "static/css/main.b8964653.chunk.css",
+    "static/js/main.a5b39455.chunk.js"
   ]
 }
